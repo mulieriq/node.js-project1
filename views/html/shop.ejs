@@ -1,0 +1,33 @@
+<%- include('/root/LocalMountedDisk/Projects/Web/Node.JS/Node/classProject/includes/head.ejs')%>
+<title>
+    <%=pagetitle%>
+</title>
+</head>
+<body>
+    <%- include('/root/LocalMountedDisk/Projects/Web/Node.JS/Node/classProject/includes/navigator.ejs')%>
+    <div class="container ">
+        <p class="slideOutDown">My List Of Products ... </p>
+        <% if (prods.length > 0){%>
+        <div class="row">
+            <div class="col s12 m4 l4">
+               
+                <div class="card small slideOutDow">
+                    <div class="card-content">
+                        <img src="https://chopra.com/sites/default/files/field/image/6reasonswhytravelingisgoodforyou.jpg"
+                            alt="Un Able To Locate image" class="responsive-img">
+                    </div>
+                    <div class="card-action">
+                        <p>
+                            <%=prods.length %> Products Remaining</p>
+                    </div>
+                </div>
+          
+        
+        </div>
+            <%
+        }else{
+        %>
+            <h1>No Products</h1>
+            <%}%>
+        
+    </body>

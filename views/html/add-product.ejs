@@ -1,0 +1,37 @@
+<%- include('/root/LocalMountedDisk/Projects/Web/Node.JS/Node/classProject/includes/head.ejs')%>
+<title><%=title%></title>
+
+<body>
+    <%- include('/root/LocalMountedDisk/Projects/Web/Node.JS/Node/classProject/includes/navigator.ejs')%>
+    <!-- Body -->
+    <div class="container">
+        <form action='/admin/product' method='POST'>
+            <div class="input-field">
+                <label for="title">Product Name</label>
+                <input type='text' name='title'>
+            </div>
+            <div class="input-field">
+                <label for="price">Price</label>
+                <input type='text' name='price'>
+            </div>
+            <div class="input-field">
+                <label for="description">Description</label>
+                <input type='text' name='description'>
+            </div>
+            <div class="input-field">
+                    <label for="number">Number</label>
+                    <input type='number' name='number'>
+                </div>
+                <div class="input-field">
+                  
+                    <input type='file' name='img'>
+                </div>
+
+            <button class="btn green hoverable darken-4" type='submit'>Add Product</button>
+
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
